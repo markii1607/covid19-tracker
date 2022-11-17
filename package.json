@@ -9,6 +9,7 @@
         "@testing-library/user-event": "^7.1.2",
         "chart.js": "^2.9.3",
         "firebase": "^7.20.0",
+        "gh-pages": "^4.0.0",
         "leaflet": "^1.7.1",
         "numeral": "^2.0.6",
         "react": "^16.13.1",
@@ -24,7 +25,9 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": "react-app"
